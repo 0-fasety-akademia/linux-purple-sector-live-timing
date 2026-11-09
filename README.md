@@ -10,6 +10,7 @@ Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing s
   - **Race and sprint:** gap to the leader, gap to the car ahead, or both.
   - **Practice and qualifying:** lap times or gap to P1.
   - **Status chips:** Safety Car, VSC, red flag and finish. Lap or remaining time is optional.
+  - **Chequered flag:** after the finish each driver gets a 🏁 icon once he crosses the line (panel and menu).
 - **Menu:**
   - full classification with team colours; best time in purple, retired or knocked-out drivers dimmed, PIT tag,
   - **qualifying sections:** elimination zone (Q1/Q2), knocked out in Q2, knocked out in Q1, each showing the time from the segment the driver was knocked out in,
@@ -30,7 +31,7 @@ From extensions.gnome.org (after review), or from the release files:
 gnome-extensions install --force purple-sector-live-timing@jgu.shell-extension.zip
 
 # or Debian/Ubuntu package (system-wide; replaces linux-f1-live-timing)
-sudo apt install ./linux-purple-sector-live-timing_1.0.0_all.deb
+sudo apt install ./linux-purple-sector-live-timing_1.0.2_all.deb
 ```
 
 Then log out and back in (Wayland loads new extensions at login) and enable it:
@@ -87,4 +88,4 @@ GPL-2.0-or-later (see `LICENSE`).
 
 Rozszerzenie GNOME pokazuje wyniki sesji na żywo w górnym pasku. Domyślnie w pasku jest tylko ikona, a opcjonalnie 1–3 kierowców. Po kliknięciu widać pełną klasyfikację z sekcjami Q1/Q2/Q3 i rozwijaną tabelą. Interfejs ma polskie tłumaczenie.
 
-Instalacja z paczki: `sudo apt install ./linux-purple-sector-live-timing_1.0.0_all.deb`, potem wyloguj się, zaloguj ponownie i wpisz `gnome-extensions enable purple-sector-live-timing@jgu`.
+Instalacja z paczki: `sudo apt install ./linux-purple-sector-live-timing_1.0.2_all.deb`, potem wyloguj się, zaloguj ponownie i wpisz `gnome-extensions enable purple-sector-live-timing@jgu`.
