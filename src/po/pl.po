@@ -1,0 +1,425 @@
+# Purple Sector Live Timing – Polish translation.
+# Copyright (C) 2026 JGu
+# This file is distributed under the same license as purple-sector-live-timing (GPL-2.0-or-later).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: purple-sector-live-timing\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-08 20:04+0100\n"
+"PO-Revision-Date: 2026-11-07 23:30+0100\n"
+"Last-Translator: JGu\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension/prefs.js:50 extension/lib/indicator.js:262
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: extension/prefs.js:55
+msgid "Top bar"
+msgstr "Górny pasek"
+
+#: extension/prefs.js:56
+msgid "Drivers next to the icon"
+msgstr "Kierowcy obok ikony"
+
+#: extension/prefs.js:57
+msgid "0 shows the icon only"
+msgstr "0 – tylko ikona"
+
+#: extension/prefs.js:58
+msgid "Race and sprint"
+msgstr "Wyścig i sprint"
+
+#: extension/prefs.js:59 extension/lib/indicator.js:237
+msgid "Gap to leader"
+msgstr "Do lidera"
+
+#: extension/prefs.js:59
+msgid "Gap to the car ahead"
+msgstr "Do auta przed"
+
+#: extension/prefs.js:59 extension/lib/indicator.js:237
+msgid "Both"
+msgstr "Oba"
+
+#: extension/prefs.js:61
+msgid "Practice and qualifying"
+msgstr "Treningi i kwalifikacje"
+
+#: extension/prefs.js:62 extension/lib/indicator.js:241
+msgid "Lap times"
+msgstr "Czasy okrążeń"
+
+#: extension/prefs.js:62 extension/lib/indicator.js:241
+msgid "Gap to P1"
+msgstr "Strata do P1"
+
+#: extension/prefs.js:64
+msgid "Show lap or remaining time"
+msgstr "Pokazuj okrążenie lub czas do końca"
+
+#: extension/prefs.js:65
+msgid "Show the next session when nothing is live"
+msgstr "Pokazuj następną sesję, gdy nic nie trwa"
+
+#: extension/prefs.js:68
+msgid "Timing"
+msgstr "Pomiar czasu"
+
+#: extension/prefs.js:69
+msgid "Delay (seconds)"
+msgstr "Opóźnienie (sekundy)"
+
+#: extension/prefs.js:70
+msgid "Hold results back to stay in sync with the TV broadcast"
+msgstr "Opóźnia wyniki, żeby nie wyprzedzały transmisji TV"
+
+#: extension/prefs.js:71
+msgid "Demo race"
+msgstr "Wyścig demo"
+
+#: extension/prefs.js:72
+msgid "Play a recorded race with fictional drivers instead of the live feed"
+msgstr "Odtwarza nagrany wyścig z fikcyjnymi kierowcami zamiast danych na żywo"
+
+#: extension/prefs.js:75
+msgid "Notifications"
+msgstr "Powiadomienia"
+
+#: extension/prefs.js:76
+msgid "Show notifications"
+msgstr "Pokazuj powiadomienia"
+
+#: extension/prefs.js:78
+msgid "Session start"
+msgstr "Start sesji"
+
+#: extension/prefs.js:79
+msgid "New race leader"
+msgstr "Zmiana lidera wyścigu"
+
+#: extension/prefs.js:80
+msgid "Safety Car, VSC and red flag"
+msgstr "Safety Car, VSC i czerwona flaga"
+
+#: extension/prefs.js:81
+msgid "Finish with the top three"
+msgstr "Meta z pierwszą trójką"
+
+#: extension/prefs.js:90
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: extension/prefs.js:91
+msgid "Menu style"
+msgstr "Styl menu"
+
+#: extension/prefs.js:92
+msgid "Follow system"
+msgstr "Jak w systemie"
+
+#: extension/prefs.js:92
+msgid "Light"
+msgstr "Jasny"
+
+#: extension/prefs.js:92
+msgid "Dark"
+msgstr "Ciemny"
+
+#: extension/prefs.js:96
+msgid "About"
+msgstr "O programie"
+
+#: extension/prefs.js:109
+msgid "Created by:"
+msgstr "Created by:"
+
+#: extension/prefs.js:110
+msgid "Supported by"
+msgstr "Supported by"
+
+#: extension/prefs.js:111
+msgid "Source code and issues"
+msgstr "Kod źródłowy i zgłoszenia"
+
+#: extension/prefs.js:118
+msgid ""
+"Unofficial project, not affiliated with any racing series or its organisers. "
+"Results come from the public live timing feed, the session calendar from the "
+"Jolpica API. The demo race uses fictional drivers and teams."
+msgstr ""
+"Projekt nieoficjalny, niezwiązany z żadną serią wyścigową ani jej "
+"organizatorami. Wyniki pochodzą z publicznego strumienia live timing, "
+"kalendarz sesji z API Jolpica. Wyścig demo używa fikcyjnych kierowców i "
+"zespołów."
+
+#: extension/lib/indicator.js:126
+msgid "Loading demo…"
+msgstr "Wczytywanie demo…"
+
+#: extension/lib/indicator.js:128
+msgid "Connecting…"
+msgstr "Łączenie…"
+
+#: extension/lib/indicator.js:132 extension/lib/indicator.js:269
+msgid "No live session"
+msgstr "Brak sesji na żywo"
+
+#: extension/lib/indicator.js:135
+#, javascript-format
+msgid "Starting soon: %s"
+msgstr "Za chwilę: %s"
+
+#: extension/lib/indicator.js:136
+#, javascript-format
+msgid "Waiting for data: %s"
+msgstr "Czekam na dane: %s"
+
+#: extension/lib/indicator.js:143
+#, javascript-format
+msgid "Next: %s · %s"
+msgstr "Następna: %s · %s"
+
+#: extension/lib/indicator.js:230
+msgid "Next to the panel icon"
+msgstr "W pasku obok ikony"
+
+#: extension/lib/indicator.js:232
+msgid "Icon only"
+msgstr "Tylko ikona"
+
+#: extension/lib/indicator.js:237
+msgid "Gap ahead"
+msgstr "Do auta przed"
+
+#: extension/lib/indicator.js:247
+msgid "Collapse table"
+msgstr "Zwiń tabelę"
+
+#: extension/lib/indicator.js:247
+msgid "Expand table"
+msgstr "Rozwiń tabelę"
+
+#: extension/lib/indicator.js:252
+msgid "Back to live timing"
+msgstr "Wróć do wyników na żywo"
+
+#: extension/lib/indicator.js:256
+msgid "Connect now"
+msgstr "Połącz teraz"
+
+#: extension/lib/indicator.js:259
+msgid "Play demo race"
+msgstr "Pokaż wyścig demo"
+
+#: extension/lib/indicator.js:278
+msgid "DEMO"
+msgstr "DEMO"
+
+#: extension/lib/indicator.js:280
+msgid "LIVE"
+msgstr "NA ŻYWO"
+
+#: extension/lib/indicator.js:291
+msgid "Driver"
+msgstr "Kierowca"
+
+#: extension/lib/indicator.js:326
+msgid "fastest lap"
+msgstr "najszybsze okrążenie"
+
+#: extension/lib/indicator.js:326
+msgid "best time"
+msgstr "najlepszy czas"
+
+#: extension/lib/indicator.js:329
+msgid "personal best"
+msgstr "rekord osobisty"
+
+#: extension/lib/view.js:47
+msgid "Practice 1"
+msgstr "Trening 1"
+
+#: extension/lib/view.js:48
+msgid "Practice 2"
+msgstr "Trening 2"
+
+#: extension/lib/view.js:49
+msgid "Practice 3"
+msgstr "Trening 3"
+
+#: extension/lib/view.js:50
+msgid "Practice"
+msgstr "Trening"
+
+#: extension/lib/view.js:51
+msgid "Sprint Qualifying"
+msgstr "Kwalifikacje sprintu"
+
+#: extension/lib/view.js:52
+msgid "Sprint"
+msgstr "Sprint"
+
+#: extension/lib/view.js:53
+msgid "Qualifying"
+msgstr "Kwalifikacje"
+
+#: extension/lib/view.js:54
+msgid "Race"
+msgstr "Wyścig"
+
+#: extension/lib/view.js:60 extension/lib/view.js:66
+msgid "Green flag"
+msgstr "Zielona flaga"
+
+#: extension/lib/view.js:61
+msgid "Yellow flag"
+msgstr "Żółta flaga"
+
+#: extension/lib/view.js:62
+msgid "Safety Car"
+msgstr "Safety Car"
+
+#: extension/lib/view.js:63
+msgid "Virtual Safety Car"
+msgstr "Wirtualny Safety Car"
+
+#: extension/lib/view.js:64
+msgid "VSC ending"
+msgstr "Koniec VSC"
+
+#: extension/lib/view.js:65
+msgid "Red flag"
+msgstr "Czerwona flaga"
+
+#: extension/lib/view.js:84
+msgid "FINISH"
+msgstr "META"
+
+#: extension/lib/view.js:90
+msgid "RED"
+msgstr "CZERWONA"
+
+#: extension/lib/view.js:102 extension/lib/view.js:272
+#, javascript-format
+msgid "Lap %d/%d"
+msgstr "Okr. %d/%d"
+
+#: extension/lib/view.js:106
+#, javascript-format
+msgid "%s left"
+msgstr "pozostało %s"
+
+#: extension/lib/view.js:108
+#, javascript-format
+msgid "air %s°C"
+msgstr "powietrze %s°C"
+
+#: extension/lib/view.js:110
+#, javascript-format
+msgid "track %s°C"
+msgstr "tor %s°C"
+
+#: extension/lib/view.js:122
+msgid "FASTEST"
+msgstr "NAJ. OKR."
+
+#: extension/lib/view.js:128
+msgid "LEADER"
+msgstr "LIDER"
+
+#: extension/lib/view.js:179
+msgid "Knocked out in Q2"
+msgstr "Odpadli w Q2"
+
+#: extension/lib/view.js:181
+msgid "Knocked out in Q1"
+msgstr "Odpadli w Q1"
+
+#: extension/lib/view.js:186
+msgid "Elimination zone"
+msgstr "Strefa odpadnięcia"
+
+#: extension/lib/view.js:196 extension/lib/view.js:201
+#: extension/lib/view.js:202
+msgid "Gap"
+msgstr "Strata"
+
+#: extension/lib/view.js:196
+msgid "Interval"
+msgstr "Interwał"
+
+#: extension/lib/view.js:197
+msgid "Pos±"
+msgstr "Zm."
+
+#: extension/lib/view.js:197 extension/lib/view.js:201
+#: extension/lib/view.js:202
+msgid "Tyre"
+msgstr "Opona"
+
+#: extension/lib/view.js:197 extension/lib/view.js:202
+msgid "Last"
+msgstr "Ostatnie"
+
+#: extension/lib/view.js:197
+msgid "Best"
+msgstr "Najlepsze"
+
+#: extension/lib/view.js:197
+msgid "Pit"
+msgstr "Pit"
+
+#: extension/lib/view.js:201 extension/lib/view.js:202
+msgid "Time"
+msgstr "Czas"
+
+#: extension/lib/view.js:202
+msgid "Laps"
+msgstr "Okr."
+
+#: extension/lib/view.js:229
+msgid "Source: demo recording"
+msgstr "Źródło: nagranie demo"
+
+#: extension/lib/view.js:229
+msgid "Source: public live timing feed"
+msgstr "Źródło: publiczny strumień live timing"
+
+#: extension/lib/view.js:231
+#, javascript-format
+msgid "delay %d s"
+msgstr "opóźnienie %d s"
+
+#: extension/lib/view.js:240
+msgid "Chequered flag"
+msgstr "Meta"
+
+#: extension/lib/view.js:257
+#, javascript-format
+msgid "Session started: %s"
+msgstr "Start: %s"
+
+#: extension/lib/view.js:265
+msgid "New leader"
+msgstr "Zmiana lidera"
+
+#: extension/lib/view.js:266
+#, javascript-format
+msgid "%s passes %s · lap %d/%d"
+msgstr "%s wyprzedza %s · okr. %d/%d"
+
+#: extension/lib/view.js:273
+#, javascript-format
+msgid "%s leads"
+msgstr "prowadzi %s"
+
+#: extension/lib/view.js:282
+#, javascript-format
+msgid "Finished: %s"
+msgstr "Meta: %s"

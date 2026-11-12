@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="purple-sector-live-timing">
+  <schema id="org.gnome.shell.extensions.purple-sector-live-timing"
+          path="/org/gnome/shell/extensions/purple-sector-live-timing/">
+    <key name="panel-drivers" type="i">
+      <range min="0" max="3"/>
+      <default>0</default>
+      <summary>Drivers shown next to the panel icon</summary>
+      <description>0 shows the icon only.</description>
+    </key>
+    <key name="race-mode" type="s">
+      <choices>
+        <choice value="leader"/>
+        <choice value="interval"/>
+        <choice value="both"/>
+      </choices>
+      <default>'leader'</default>
+      <summary>Gap shown in the panel during races</summary>
+    </key>
+    <key name="practice-mode" type="s">
+      <choices>
+        <choice value="times"/>
+        <choice value="gap"/>
+      </choices>
+      <default>'gap'</default>
+      <summary>Value shown in the panel during practice and qualifying</summary>
+    </key>
+    <key name="show-panel-status" type="b">
+      <default>false</default>
+      <summary>Show lap or remaining time in the panel</summary>
+    </key>
+    <key name="show-next-session" type="b">
+      <default>true</default>
+      <summary>Show the next session in the panel when nothing is live</summary>
+    </key>
+    <key name="delay-seconds" type="i">
+      <range min="0" max="60"/>
+      <default>0</default>
+      <summary>Delay in seconds, to stay in sync with the TV broadcast</summary>
+    </key>
+    <key name="notifications" type="b">
+      <default>true</default>
+      <summary>Show notifications</summary>
+    </key>
+    <key name="notify-session-start" type="b">
+      <default>true</default>
+      <summary>Notify when a session starts</summary>
+    </key>
+    <key name="notify-leader-change" type="b">
+      <default>true</default>
+      <summary>Notify about a new race leader</summary>
+    </key>
+    <key name="notify-flags" type="b">
+      <default>true</default>
+      <summary>Notify about Safety Car, VSC and red flags</summary>
+    </key>
+    <key name="notify-finish" type="b">
+      <default>true</default>
+      <summary>Notify with the top three at the finish</summary>
+    </key>
+    <key name="theme" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="light"/>
+        <choice value="dark"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Menu style</summary>
+    </key>
+    <key name="expanded" type="b">
+      <default>false</default>
+      <summary>Show the wide table in the menu</summary>
+    </key>
+    <key name="demo-mode" type="b">
+      <default>false</default>
+      <summary>Play the built-in demo race instead of the live feed</summary>
+    </key>
+  </schema>
+</schemalist>

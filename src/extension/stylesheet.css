@@ -1,0 +1,121 @@
+/* panel */
+.psl-panel { spacing: 6px; }
+.psl-panel-icon { icon-size: 16px; }
+.psl-panel-item { spacing: 5px; padding-left: 6px; }
+.psl-panel-pos { font-size: 0.85em; color: rgba(255, 255, 255, 0.62); }
+.psl-panel-bar { width: 3px; height: 12px; border-radius: 2px; }
+.psl-panel-tla { font-weight: bold; }
+.psl-panel-value { font-family: monospace; font-size: 0.95em; }
+.psl-panel-chip { font-size: 0.8em; font-weight: bold; padding: 0 6px; border-radius: 4px; }
+.psl-panel-chip.chip-neutral { background-color: rgba(255, 255, 255, 0.18); color: #ffffff; }
+.psl-panel-flag { icon-size: 12px; }
+.psl-panel-idle { font-size: 0.9em; padding-left: 4px; }
+
+/* menu frame: the popup draws its own card */
+.psl-menu .popup-menu-content { padding: 0; background-color: transparent; border: none; box-shadow: none; }
+.psl-popup { border-radius: 12px; padding: 8px 0; min-width: 372px; }
+.psl-popup.expanded { min-width: 860px; }
+.psl-dark { background-color: #2a2b30; color: #f2f2f2; border: 1px solid #3c3e45; }
+.psl-light { background-color: #ffffff; color: #1a1a1a; border: 1px solid #d5d6db; }
+.psl-dark .psl-muted { color: #a6abb5; }
+.psl-light .psl-muted { color: #5e626b; }
+
+.psl-head { padding: 8px 16px 10px 16px; spacing: 8px; }
+.psl-title { font-weight: bold; font-size: 1.05em; }
+.psl-live { font-size: 0.75em; font-weight: bold; }
+.psl-dark .psl-live { color: #ff8a7e; }
+.psl-light .psl-live { color: #b3201a; }
+.psl-subrow { spacing: 8px; }
+.psl-info { font-size: 0.85em; }
+
+.psl-chip { font-size: 0.8em; font-weight: bold; padding: 1px 7px; border-radius: 4px; }
+.psl-dark .chip-green { background-color: #1f3d2c; color: #5be39a; }
+.psl-light .chip-green { background-color: #ddf3e5; color: #17703f; }
+.chip-yellow, .chip-sc, .chip-vsc { background-color: #f5c518; color: #1a1a1a; }
+.chip-red { background-color: #d7261e; color: #ffffff; }
+.psl-dark .chip-neutral { background-color: #3a3d45; color: #f2f2f2; }
+.psl-light .chip-neutral { background-color: #e6e7eb; color: #1a1a1a; }
+
+.psl-separator { height: 1px; margin: 4px 0; }
+.psl-dark .psl-separator { background-color: #3c3e45; }
+.psl-light .psl-separator { background-color: #e2e3e7; }
+
+/* table */
+.psl-cols { padding: 4px 16px; spacing: 8px; font-size: 0.72em; font-weight: bold; }
+.psl-row { padding: 0 16px; spacing: 8px; height: 24px; }
+.psl-popup.expanded .psl-row { height: 27px; }
+.psl-dark .psl-row.alt { background-color: #2e2f35; }
+.psl-light .psl-row.alt { background-color: #f6f6f8; }
+.psl-dark .psl-row.danger { background-color: rgba(215, 38, 30, 0.16); }
+.psl-light .psl-row.danger { background-color: #fdecea; }
+.psl-dark .psl-row.dim StLabel { color: #8a8f98; }
+.psl-light .psl-row.dim StLabel { color: #6e727a; }
+
+.psl-pos { width: 22px; font-family: monospace; font-size: 0.9em; }
+.psl-driver { spacing: 8px; }
+.psl-flag { icon-size: 13px; }
+.psl-bar { width: 3px; height: 14px; border-radius: 2px; }
+.psl-tla { font-weight: bold; width: 36px; }
+.psl-name { width: 150px; font-size: 0.9em; }
+.psl-c1 { width: 82px; font-family: monospace; font-size: 0.9em; }
+.psl-c2 { width: 74px; font-family: monospace; font-size: 0.9em; }
+.psl-ext { width: 80px; font-family: monospace; font-size: 0.9em; }
+.psl-ext.narrow { width: 36px; }
+.psl-tyrecell { width: 58px; spacing: 6px; }
+.psl-cols .psl-c1, .psl-cols .psl-c2, .psl-cols .psl-ext, .psl-cols .psl-pos { font-family: inherit; font-size: 1em; }
+
+.psl-tag { font-size: 0.65em; font-weight: bold; padding: 0 5px; border-radius: 4px; }
+.psl-dark .psl-tag.purple { background-color: #3b2a55; color: #c9a6ff; }
+.psl-light .psl-tag.purple { background-color: #eee6fa; color: #6b2fc4; }
+.psl-dark .psl-tag.pit { background-color: #45484f; color: #f2f2f2; }
+.psl-light .psl-tag.pit { background-color: #1a1a1a; color: #ffffff; }
+
+.psl-dark .purple { color: #c9a6ff; }
+.psl-light .purple { color: #6b2fc4; }
+.psl-dark .green { color: #5be39a; }
+.psl-light .green { color: #17703f; }
+.psl-dark .red { color: #ff8a7e; }
+.psl-light .red { color: #b3201a; }
+
+.psl-tyre { width: 14px; height: 14px; border-radius: 9px; border-width: 2px; font-size: 0.6em; font-weight: bold; text-align: center; }
+.psl-dark .tyre-S { border-color: #ff4d5a; }
+.psl-light .tyre-S { border-color: #d7263d; }
+.psl-dark .tyre-M { border-color: #f5c518; }
+.psl-light .tyre-M { border-color: #c99a00; }
+.psl-dark .tyre-H { border-color: #e6e7eb; }
+.psl-light .tyre-H { border-color: #6b6f78; }
+.tyre-I { border-color: #43b047; }
+.tyre-W { border-color: #2f7fe0; }
+
+.psl-divider { padding: 6px 16px 3px 16px; spacing: 8px; font-size: 0.68em; font-weight: bold; }
+.psl-divider-line { height: 1px; }
+.psl-dark .psl-divider.danger { color: #ff8a7e; }
+.psl-light .psl-divider.danger { color: #b3201a; }
+.psl-dark .psl-divider.danger .psl-divider-line { background-color: #ff8a7e; }
+.psl-light .psl-divider.danger .psl-divider-line { background-color: #b3201a; }
+.psl-dark .psl-divider.out { color: #a6abb5; }
+.psl-light .psl-divider.out { color: #5e626b; }
+.psl-dark .psl-divider.out .psl-divider-line { background-color: #4a4d55; }
+.psl-light .psl-divider.out .psl-divider-line { background-color: #c9cbd1; }
+
+.psl-legend { padding: 6px 16px 2px 16px; spacing: 6px; font-size: 0.72em; }
+
+/* controls */
+.psl-caption { padding: 6px 16px 0 16px; font-size: 0.72em; }
+.psl-segmented { border-radius: 8px; padding: 3px; spacing: 2px; margin: 6px 16px 2px 16px; }
+.psl-dark .psl-segmented { background-color: #1f2025; }
+.psl-light .psl-segmented { background-color: #efeff2; }
+.psl-segment { border-radius: 6px; padding: 4px 10px; font-size: 0.8em; }
+.psl-dark .psl-segment { color: #c9cdd4; }
+.psl-light .psl-segment { color: #3a3d44; }
+.psl-dark .psl-segment:hover { background-color: #34363c; }
+.psl-light .psl-segment:hover { background-color: #e2e3e7; }
+.psl-dark .psl-segment:checked { background-color: #45484f; color: #ffffff; font-weight: bold; }
+.psl-light .psl-segment:checked { background-color: #ffffff; color: #1a1a1a; font-weight: bold; }
+
+.psl-item { padding: 7px 16px; font-size: 0.92em; }
+.psl-item-box { spacing: 8px; }
+.psl-dark .psl-item { color: #f2f2f2; }
+.psl-light .psl-item { color: #1a1a1a; }
+.psl-dark .psl-item:hover, .psl-dark .psl-item:focus { background-color: #34363c; }
+.psl-light .psl-item:hover, .psl-light .psl-item:focus { background-color: #f0f0f3; }

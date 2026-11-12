@@ -2,6 +2,8 @@
 
 GNOME Shell extension that shows live motorsport session results in the top bar: practice, qualifying, sprint and race.
 
+**Version 1.0.3** (2026-11-12)
+
 Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing series or its organisers.
 
 ## Features
@@ -24,14 +26,14 @@ Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing s
 
 ## Install
 
-From extensions.gnome.org (after review), or from the release files:
+From extensions.gnome.org (after review), or from the files on the [Releases page](https://github.com/jgu-linux-apps/linux-purple-sector-live-timing/releases/latest):
 
 ```bash
 # zip
 gnome-extensions install --force purple-sector-live-timing@jgu.shell-extension.zip
 
 # or Debian/Ubuntu package (system-wide; replaces linux-f1-live-timing)
-sudo apt install ./linux-purple-sector-live-timing_1.0.2_all.deb
+sudo apt install ./linux-purple-sector-live-timing_<version>_all.deb
 ```
 
 Then log out and back in (Wayland loads new extensions at login) and enable it:
@@ -66,6 +68,11 @@ Nothing else is sent anywhere, and there is no telemetry.
 
 ## Development
 
+The source code is in the `src/` folder of this repository; the zip and `.deb` are not kept in git but
+attached to [GitHub Releases](https://github.com/jgu-linux-apps/linux-purple-sector-live-timing/releases). The version is set in `packaging/build.sh` (`VERSION`). Pushing a tag
+`vX.Y.Z` with the same version makes GitHub Actions (`.github/workflows/release.yml`) build both files and
+publish the release. Run the commands below inside `src/` (building needs `gettext`, `gnome-shell` and `fakeroot`):
+
 ```bash
 gjs -m tests/test-core.js                    # logic tests (state, view, calendar, demo replay)
 python3 tools/make_demo.py                   # regenerate the demo race
@@ -74,6 +81,11 @@ python3 tools/fake_feed_server.py            # local stand-in feed for testing (
 ```
 
 `tools/` and `tests/` are not part of the extension zip.
+
+## Version history
+
+- **1.0.3** (2026-11-12): no changes in the extension. The repository now keeps the source code in `src/`, and the zip and `.deb` are published on the GitHub Releases page (built by GitHub Actions for every version tag).
+- **1.0.2** and earlier: see the git history.
 
 ## Credits and license
 
@@ -88,4 +100,4 @@ GPL-2.0-or-later (see `LICENSE`).
 
 Rozszerzenie GNOME pokazuje wyniki sesji na żywo w górnym pasku. Domyślnie w pasku jest tylko ikona, a opcjonalnie 1–3 kierowców. Po kliknięciu widać pełną klasyfikację z sekcjami Q1/Q2/Q3 i rozwijaną tabelą. Interfejs ma polskie tłumaczenie.
 
-Instalacja z paczki: `sudo apt install ./linux-purple-sector-live-timing_1.0.2_all.deb`, potem wyloguj się, zaloguj ponownie i wpisz `gnome-extensions enable purple-sector-live-timing@jgu`.
+Instalacja z paczki (najnowsza na [stronie Releases](https://github.com/jgu-linux-apps/linux-purple-sector-live-timing/releases/latest)): `sudo apt install ./linux-purple-sector-live-timing_<wersja>_all.deb`, potem wyloguj się, zaloguj ponownie i wpisz `gnome-extensions enable purple-sector-live-timing@jgu`.
