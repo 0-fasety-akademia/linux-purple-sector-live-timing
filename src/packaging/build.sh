@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 UUID=purple-sector-live-timing@jgu
 SCHEMA=org.gnome.shell.extensions.purple-sector-live-timing.gschema.xml
 PKG=linux-purple-sector-live-timing
-VERSION=${VERSION:-1.0.3}
+VERSION=${VERSION:-1.0.4}
 
 mkdir -p dist
 gnome-extensions pack extension --force -o dist \
@@ -38,7 +38,7 @@ Depends: gnome-shell (>= 46)
 Conflicts: linux-f1-live-timing
 Replaces: linux-f1-live-timing
 Maintainer: JGu <jaroslawguza83@gmail.com>
-Homepage: https://github.com/0-fasety-akademia/$PKG
+Homepage: https://github.com/jgu-linux-apps/$PKG
 Description: Purple Sector Live Timing – live session results in the GNOME top bar
  GNOME Shell extension showing live motorsport session results: panel icon,
  optionally the top 1–3 drivers, and a menu with the full classification,

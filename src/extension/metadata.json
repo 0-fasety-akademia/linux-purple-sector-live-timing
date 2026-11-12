@@ -3,7 +3,7 @@
   "name": "Purple Sector Live Timing",
   "description": "Live motorsport session results in the top bar: practice, qualifying, sprint and race.\n\n* Panel icon, optionally with the top 1–3 drivers and their gaps\n* Click for the full classification with team colours, Q1/Q2/Q3 sections and an expandable table (tyres, last and best laps, pit stops)\n* Connects automatically shortly before each session, offline otherwise\n* Notifications for session start, new leader, Safety Car / red flag and the finish\n* Optional delay to stay in sync with the TV broadcast\n* Built-in demo race with fictional drivers\n\nUnofficial. Uses the public live timing feed and the Jolpica calendar API.",
   "shell-version": ["46", "47", "48", "49", "50", "51"],
-  "url": "https://github.com/0-fasety-akademia/linux-purple-sector-live-timing",
+  "url": "https://github.com/jgu-linux-apps/linux-purple-sector-live-timing",
   "settings-schema": "org.gnome.shell.extensions.purple-sector-live-timing",
   "gettext-domain": "purple-sector-live-timing"
 }

@@ -2,7 +2,7 @@
 
 GNOME Shell extension that shows live motorsport session results in the top bar: practice, qualifying, sprint and race.
 
-**Version 1.0.3** (2026-11-12)
+**Version 1.0.4** (2026-11-12)
 
 Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing series or its organisers.
 
@@ -84,6 +84,7 @@ python3 tools/fake_feed_server.py            # local stand-in feed for testing (
 
 ## Version history
 
+- **1.0.4** (2026-11-12): project address updated to `github.com/jgu-linux-apps` (extension metadata and package homepage).
 - **1.0.3** (2026-11-12): no changes in the extension. The repository now keeps the source code in `src/`, and the zip and `.deb` are published on the GitHub Releases page (built by GitHub Actions for every version tag).
 - **1.0.2** and earlier: see the git history.
 
