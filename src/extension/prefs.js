@@ -90,6 +90,7 @@ export default class PurpleSectorPreferences extends ExtensionPreferences {
         const look = new Adw.PreferencesGroup({title: _('Appearance')});
         look.add(comboRow(settings, 'theme', _('Menu style'), [
             ['auto', _('Follow system')], ['light', _('Light')], ['dark', _('Dark')],
+            ['aurora', _('Aurora (light / dark)')],
         ]));
         page.add(look);
 

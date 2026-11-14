@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 UUID=purple-sector-live-timing@jgu
 SCHEMA=org.gnome.shell.extensions.purple-sector-live-timing.gschema.xml
 PKG=linux-purple-sector-live-timing
-VERSION=${VERSION:-1.0.4}
+VERSION=${VERSION:-1.0.5}
 
 mkdir -p dist
 gnome-extensions pack extension --force -o dist \

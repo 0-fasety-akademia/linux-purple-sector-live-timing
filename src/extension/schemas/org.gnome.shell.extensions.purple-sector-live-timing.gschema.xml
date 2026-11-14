@@ -63,6 +63,7 @@
         <choice value="auto"/>
         <choice value="light"/>
         <choice value="dark"/>
+        <choice value="aurora"/>
       </choices>
       <default>'auto'</default>
       <summary>Menu style</summary>

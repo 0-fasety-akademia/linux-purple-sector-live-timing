@@ -2,7 +2,7 @@
 
 GNOME Shell extension that shows live motorsport session results in the top bar: practice, qualifying, sprint and race.
 
-**Version 1.0.4** (2026-11-12)
+**Version 1.0.5** (2026-11-14)
 
 Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing series or its organisers.
 
@@ -17,7 +17,8 @@ Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing s
   - full classification with team colours; best time in purple, retired or knocked-out drivers dimmed, PIT tag,
   - **qualifying sections:** elimination zone (Q1/Q2), knocked out in Q2, knocked out in Q1, each showing the time from the segment the driver was knocked out in,
   - **expandable table** with names, position change, tyre and tyre age, last and best lap, and pit stops (Q1/Q2/Q3 times in qualifying),
-  - scrolls when it doesn't fit the screen, follows the system light/dark style.
+  - scrolls when it doesn't fit the screen, follows the system light/dark style; optional **Aurora** style
+    (the shared look of the JGu Linux Apps series).
 - **Automatic connection:** connects about 10 minutes before each session (season calendar from the Jolpica API) and is offline otherwise. Without a calendar it checks the feed every 15 minutes.
 - **Notifications:** session start, new leader, Safety Car / VSC / red flag, finish with the top three.
 - **Delay** of 0–60 s to stay in sync with the TV broadcast.
@@ -84,6 +85,7 @@ python3 tools/fake_feed_server.py            # local stand-in feed for testing (
 
 ## Version history
 
+- **1.0.5** (2026-11-14): new **Aurora** menu style (Settings → Appearance → Menu style), the shared look of the JGu Linux Apps series: lavender / deep navy card, violet-to-cyan switches, light or dark following the system. Timing colours (purple fastest sector, green, red) are unchanged.
 - **1.0.4** (2026-11-12): project address updated to `github.com/jgu-linux-apps` (extension metadata and package homepage).
 - **1.0.3** (2026-11-12): no changes in the extension. The repository now keeps the source code in `src/`, and the zip and `.deb` are published on the GitHub Releases page (built by GitHub Actions for every version tag).
 - **1.0.2** and earlier: see the git history.

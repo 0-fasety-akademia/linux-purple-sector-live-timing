@@ -146,7 +146,7 @@ class Indicator extends PanelMenu.Button {
 
     get dark() {
         const theme = this._settings.get_string('theme');
-        if (theme !== 'auto')
+        if (theme === 'light' || theme === 'dark')
             return theme === 'dark';
         return this._interfaceSettings.get_string('color-scheme') === 'prefer-dark';
     }
@@ -219,7 +219,8 @@ class Indicator extends PanelMenu.Button {
         this._renderedKey = this._modelKey;
         const m = this._model;
         this._root.destroy_all_children();
-        this._root.style_class = `psl-popup ${m.dark ? 'psl-dark' : 'psl-light'}${m.expanded ? ' expanded' : ''}`;
+        const aurora = this._settings.get_string('theme') === 'aurora' ? ' psl-aurora' : '';
+        this._root.style_class = `psl-popup ${m.dark ? 'psl-dark' : 'psl-light'}${aurora}${m.expanded ? ' expanded' : ''}`;
 
         if (m.mode === 'session')
             this._renderSession(m);

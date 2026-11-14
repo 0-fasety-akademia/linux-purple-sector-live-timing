@@ -125,6 +125,10 @@ msgstr ""
 msgid "Follow system"
 msgstr ""
 
+#: extension/prefs.js:93
+msgid "Aurora (light / dark)"
+msgstr ""
+
 #: extension/prefs.js:92
 msgid "Light"
 msgstr ""

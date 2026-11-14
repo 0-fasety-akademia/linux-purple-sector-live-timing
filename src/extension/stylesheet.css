@@ -119,3 +119,30 @@
 .psl-light .psl-item { color: #1a1a1a; }
 .psl-dark .psl-item:hover, .psl-dark .psl-item:focus { background-color: #34363c; }
 .psl-light .psl-item:hover, .psl-light .psl-item:focus { background-color: #f0f0f3; }
+
+/* Aurora: wspólny motyw serii JGu Linux Apps. Zmienia tylko kartę, ramki i przełączniki —
+   kolory pomiarów (fiolet = najszybszy sektor, zielony, czerwony) zostają bez zmian. */
+.psl-aurora.psl-light { background-gradient-direction: vertical; background-gradient-start: #fbfaff;
+    background-gradient-end: #eef4ff; color: #1f1a3a; border: 1px solid #dcd5f7;
+    box-shadow: 0 6px 18px rgba(124, 92, 255, 0.18); }
+.psl-aurora.psl-dark { background-gradient-direction: vertical; background-gradient-start: #14172b;
+    background-gradient-end: #0c0e1a; color: #ecebff; border: 1px solid #2c3150;
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.14); }
+.psl-aurora.psl-light .psl-muted { color: #6b6590; }
+.psl-aurora.psl-dark .psl-muted { color: #a3a1c8; }
+.psl-aurora.psl-light .psl-separator { background-color: #e6e1fa; }
+.psl-aurora.psl-dark .psl-separator { background-color: #252a45; }
+.psl-aurora.psl-light .psl-row.alt { background-color: rgba(124, 92, 255, 0.05); }
+.psl-aurora.psl-dark .psl-row.alt { background-color: rgba(255, 255, 255, 0.03); }
+.psl-aurora.psl-light .psl-segmented { background-color: #efebff; }
+.psl-aurora.psl-dark .psl-segmented { background-color: #151931; }
+.psl-aurora.psl-light .psl-segment:hover { background-color: #e4ddff; }
+.psl-aurora.psl-dark .psl-segment:hover { background-color: #1e2340; }
+.psl-aurora .psl-segment:checked { background-gradient-direction: horizontal; background-gradient-start: #7c5cff;
+    background-gradient-end: #22b8e6; color: #ffffff; }
+.psl-aurora.psl-light .psl-item:hover, .psl-aurora.psl-light .psl-item:focus { background-color: #efebff; }
+.psl-aurora.psl-dark .psl-item:hover, .psl-aurora.psl-dark .psl-item:focus { background-color: #1e2340;
+    box-shadow: inset 3px 0 0 #22d3ee; }
+.psl-aurora.psl-light .psl-item:hover { box-shadow: inset 3px 0 0 #7c5cff; }
+.psl-aurora.psl-light .chip-neutral { background-color: #ece8fb; color: #1f1a3a; }
+.psl-aurora.psl-dark .chip-neutral { background-color: #1e2340; color: #ecebff; }

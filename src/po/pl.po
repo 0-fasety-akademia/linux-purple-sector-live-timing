@@ -123,6 +123,9 @@ msgstr "Styl menu"
 msgid "Follow system"
 msgstr "Jak w systemie"
 
+msgid "Aurora (light / dark)"
+msgstr "Aurora (jasny / ciemny)"
+
 #: extension/prefs.js:92
 msgid "Light"
 msgstr "Jasny"
