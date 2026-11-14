@@ -6,6 +6,7 @@ import System from 'system';
 import {SessionState, deepMerge} from '../extension/lib/state.js';
 import {build, diffEvents, normGap} from '../extension/lib/view.js';
 import {parseCalendar, activeSession, nextSession} from '../extension/lib/schedule.js';
+import {versionFromMetadata, isUpdateInstalled} from '../extension/lib/version.js';
 
 const _ = s => s;
 let failures = 0;
@@ -19,6 +20,16 @@ function check(name, cond, detail = '') {
 }
 const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const opts = (o = {}) => ({panelDrivers: 0, raceMode: 'leader', practiceMode: 'gap', showPanelStatus: false, delay: 0, ...o});
+
+// --- installed version (menu offers to log out after an update)
+{
+    check('version from metadata', versionFromMetadata('{"uuid":"x","version-name":"1.0.6"}') === '1.0.6');
+    check('version missing', versionFromMetadata('{"uuid":"x"}') === '');
+    check('version bad json', versionFromMetadata('{oops') === '');
+    check('update installed', isUpdateInstalled('1.0.6', '1.0.7'));
+    check('same version', !isUpdateInstalled('1.0.6', '1.0.6'));
+    check('unknown versions', !isUpdateInstalled('', '1.0.7') && !isUpdateInstalled('1.0.6', ''));
+}
 
 // --- merge
 {

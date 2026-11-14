@@ -8,7 +8,10 @@ cd "$(dirname "$0")/.."
 UUID=purple-sector-live-timing@jgu
 SCHEMA=org.gnome.shell.extensions.purple-sector-live-timing.gschema.xml
 PKG=linux-purple-sector-live-timing
-VERSION=${VERSION:-1.0.5}
+VERSION=${VERSION:-1.0.7}
+# the menu compares this with the running copy to offer "log out to load it", so they must match
+META_VERSION=$(sed -n 's/.*"version-name": "\(.*\)".*/\1/p' extension/metadata.json)
+[ "$META_VERSION" = "$VERSION" ] || { echo "metadata.json version-name ($META_VERSION) differs from VERSION ($VERSION)"; exit 1; }
 
 mkdir -p dist
 gnome-extensions pack extension --force -o dist \

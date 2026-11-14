@@ -425,3 +425,15 @@ msgstr ""
 #, javascript-format
 msgid "Finished: %s"
 msgstr ""
+
+#: lib/indicator.js
+msgid "Refresh"
+msgstr ""
+
+#: lib/indicator.js
+msgid "Version %s installed – log out to load it"
+msgstr ""
+
+#: lib/indicator.js
+msgid "Quit"
+msgstr ""

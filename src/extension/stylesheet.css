@@ -123,11 +123,9 @@
 /* Aurora: wspólny motyw serii JGu Linux Apps. Zmienia tylko kartę, ramki i przełączniki —
    kolory pomiarów (fiolet = najszybszy sektor, zielony, czerwony) zostają bez zmian. */
 .psl-aurora.psl-light { background-gradient-direction: vertical; background-gradient-start: #fbfaff;
-    background-gradient-end: #eef4ff; color: #1f1a3a; border: 1px solid #dcd5f7;
-    box-shadow: 0 6px 18px rgba(124, 92, 255, 0.18); }
+    background-gradient-end: #eef4ff; color: #1f1a3a; border: 1px solid #dcd5f7; }
 .psl-aurora.psl-dark { background-gradient-direction: vertical; background-gradient-start: #14172b;
-    background-gradient-end: #0c0e1a; color: #ecebff; border: 1px solid #2c3150;
-    box-shadow: 0 0 18px rgba(34, 211, 238, 0.14); }
+    background-gradient-end: #0c0e1a; color: #ecebff; border: 1px solid #2c3150; }
 .psl-aurora.psl-light .psl-muted { color: #6b6590; }
 .psl-aurora.psl-dark .psl-muted { color: #a3a1c8; }
 .psl-aurora.psl-light .psl-separator { background-color: #e6e1fa; }

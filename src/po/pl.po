@@ -426,3 +426,15 @@ msgstr "prowadzi %s"
 #, javascript-format
 msgid "Finished: %s"
 msgstr "Meta: %s"
+
+#: lib/indicator.js
+msgid "Refresh"
+msgstr "Odśwież"
+
+#: lib/indicator.js
+msgid "Version %s installed – log out to load it"
+msgstr "Zainstalowano wersję %s – wyloguj się, aby ją wczytać"
+
+#: lib/indicator.js
+msgid "Quit"
+msgstr "Zakończ"

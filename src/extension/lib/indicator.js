@@ -12,6 +12,7 @@ import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 import {gettext as _} from 'resource:///org/gnome/shell/extensions/extension.js';
 
 import * as View from './view.js';
+import {versionFromMetadata, isUpdateInstalled} from './version.js';
 
 const MAX_PANEL_ITEMS = 3;
 
@@ -52,6 +53,7 @@ class Indicator extends PanelMenu.Button {
         this._model = null;
         this._modelKey = '';
         this._renderedKey = '';
+        this._newVersion = '';
 
         this._buildPanel();
 
@@ -59,8 +61,10 @@ class Indicator extends PanelMenu.Button {
         this._root = box(true, {style_class: 'psl-popup'});
         this.menu.box.add_child(this._root);
         this.menu.connect('open-state-changed', (_menu, open) => {
-            if (open)
+            if (open) {
+                this._checkInstalledVersion();
                 this._renderMenu(true);
+            }
         });
 
         this._interfaceSettings = new Gio.Settings({schema_id: 'org.gnome.desktop.interface'});
@@ -262,6 +266,46 @@ class Indicator extends PanelMenu.Button {
         }
         this._root.add_child(this._item(_('Settings'), 'emblem-system-symbolic',
             () => this._extension.openPreferences()));
+        if (!m.replay) {
+            this._root.add_child(this._item(_('Refresh'), 'view-refresh-symbolic',
+                () => this._service.refresh()));
+        }
+        if (this._newVersion) {
+            // a newer package is installed, but GNOME Shell runs the old code until the next login
+            this._root.add_child(this._item(View.sprintf(_('Version %s installed – log out to load it'), this._newVersion),
+                'system-log-out-symbolic', () => this._logOut()));
+        }
+        this._root.add_child(this._item(_('Quit'), 'system-shutdown-symbolic', () => this._quit()));
+    }
+
+    _checkInstalledVersion() {
+        const running = this._extension.metadata['version-name'] ?? '';
+        let installed = '';
+        try {
+            const [ok, bytes] = this._extension.dir.get_child('metadata.json').load_contents(null);
+            if (ok)
+                installed = versionFromMetadata(new TextDecoder().decode(bytes));
+        } catch {
+            // file gone (package being replaced): nothing to offer
+        }
+        this._newVersion = isUpdateInstalled(running, installed) ? installed : '';
+    }
+
+    _logOut() {
+        try {
+            Gio.Subprocess.new(['gnome-session-quit', '--logout'], Gio.SubprocessFlags.NONE);
+        } catch (e) {
+            logError(e, 'Purple Sector: log out');
+        }
+    }
+
+    // Quit = switch the extension off (like the switch in the Extensions app); it stays off until switched on there
+    _quit() {
+        const uuid = this._extension.uuid;
+        GLib.idle_add(GLib.PRIORITY_DEFAULT, () => {
+            Main.extensionManager.disableExtension(uuid);
+            return GLib.SOURCE_REMOVE;
+        });
     }
 
     _renderIdle(m) {

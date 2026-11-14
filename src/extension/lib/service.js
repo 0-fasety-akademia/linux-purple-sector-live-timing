@@ -175,6 +175,19 @@ export class LiveService {
         this._changed();
     }
 
+    /** Menu → Refresh: fetch the calendar again and, when connected, reconnect for a fresh snapshot. */
+    refresh() {
+        if (this.replaying)
+            return;
+        this._scheduleFetchedAt = 0;
+        this._loadSchedule();
+        if (this._running) {
+            this._stopFeed();
+            this._startFeed();
+        }
+        this._changed();
+    }
+
     // ---------------------------------------------------------------- data
     _push(kind, payload) {
         if (kind === 'status') {
