@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-<rect x="1" y="1" width="126" height="126" rx="28" fill="#15171C" stroke="#2E3138" stroke-width="2"/>
-<rect x="56" y="14" width="16" height="8" rx="3" fill="#F2F2F2"/>
-<rect x="61" y="20" width="6" height="10" fill="#F2F2F2"/>
-<circle cx="64" cy="72" r="38" fill="none" stroke="#F2F2F2" stroke-width="8"/>
-<path d="M46 60h36" stroke="#FF4D3D" stroke-width="8" stroke-linecap="round"/>
-<path d="M46 74h26" stroke="#F2F2F2" stroke-width="8" stroke-linecap="round"/>
-<path d="M46 88h16" stroke="#8A8F98" stroke-width="8" stroke-linecap="round"/>
-<circle cx="101" cy="30" r="9" fill="#FF4D3D"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><defs><linearGradient id="rimX" x1="0" y1="0" x2="1" y2="1"><stop offset="0.0" stop-color="#a855f7" /><stop offset="0.5" stop-color="#ec4899" /><stop offset="1.0" stop-color="#ff4d3d" /></linearGradient></defs><rect x="10" y="10" width="236" height="236" rx="58" fill="#151827" /><g transform="translate(6.400000000000006 6.400000000000006) scale(1.9)"><rect x="56" y="14" width="16" height="8" rx="3" fill="#F2F2F2" />
+<rect x="61" y="20" width="6" height="10" fill="#F2F2F2" />
+<circle cx="64" cy="72" r="38" fill="none" stroke="#F2F2F2" stroke-width="8" />
+<path d="M46 60h36" stroke="#FF4D3D" stroke-width="8" stroke-linecap="round" />
+<path d="M46 74h26" stroke="#F2F2F2" stroke-width="8" stroke-linecap="round" />
+<path d="M46 88h16" stroke="#8A8F98" stroke-width="8" stroke-linecap="round" />
+<circle cx="101" cy="30" r="9" fill="#FF4D3D" />
+</g></svg>

@@ -2,7 +2,7 @@
 
 GNOME Shell extension that shows live motorsport session results in the top bar: practice, qualifying, sprint and race.
 
-**Version 1.0.7** (2026-11-14)
+**Version 1.0.9** (2026-11-14)
 
 Part of **JGu Linux Apps**. Unofficial project, not affiliated with any racing series or its organisers.
 
@@ -85,6 +85,7 @@ python3 tools/fake_feed_server.py            # local stand-in feed for testing (
 
 ## Version history
 
+- **1.0.9** (2026-11-14): new dark-mode app icon in the series style: the app's own symbol on a deep navy tile, the same as the other apps of the series (used in notifications and settings).
 - **1.0.7** (2026-11-14): the Aurora menu style has a thin border instead of a wide glow; the menu has **Refresh** (fetches the calendar again and reconnects for a fresh classification) and **Quit** (switches the extension off, like the switch in the Extensions app; switch it on there again). After a package update the menu shows **Version X installed – log out to load it**: GNOME Shell keeps the old code in memory until the next login.
 - **1.0.5** (2026-11-14): new **Aurora** menu style (Settings → Appearance → Menu style), the shared look of the JGu Linux Apps series: lavender / deep navy card, violet-to-cyan switches, light or dark following the system. Timing colours (purple fastest sector, green, red) are unchanged.
 - **1.0.4** (2026-11-12): project address updated to `github.com/jgu-linux-apps` (extension metadata and package homepage).
