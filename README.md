@@ -98,11 +98,3 @@ python3 tools/fake_feed_server.py            # local stand-in feed for testing (
 **Supported by** Claude
 
 GPL-2.0-or-later (see `LICENSE`).
-
----
-
-### Po polsku
-
-Rozszerzenie GNOME pokazuje wyniki sesji na żywo w górnym pasku. Domyślnie w pasku jest tylko ikona, a opcjonalnie 1–3 kierowców. Po kliknięciu widać pełną klasyfikację z sekcjami Q1/Q2/Q3 i rozwijaną tabelą. Interfejs ma polskie tłumaczenie.
-
-Instalacja z paczki (najnowsza na [stronie Releases](https://github.com/jgu-linux-apps/linux-purple-sector-live-timing/releases/latest)): `sudo apt install ./linux-purple-sector-live-timing_<wersja>_all.deb`, potem wyloguj się, zaloguj ponownie i wpisz `gnome-extensions enable purple-sector-live-timing@jgu`.
